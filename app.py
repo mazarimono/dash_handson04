@@ -12,6 +12,6 @@ server = app.server
 app.layout = html.Div([
     html.H1("ヘロクへのデプロイ", style={"textAlign":"center"}),
     dcc.Graph(
-        figure=px.scatter(gap, x="gdpPercap", y="lifeExp", log_x=True)
+        figure=px.scatter(gap, x="gdpPercap", y="lifeExp", log_x=True, log_y=True)
     )
 ])
